@@ -1,4 +1,4 @@
-#### Тест 1
+#### Функции потерь и оптимизация
 
 Описание датасета ['iris'](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_iris.html)
 
