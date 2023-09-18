@@ -34,7 +34,7 @@ People with cardiovascular disease or who are at high cardiovascular risk (due t
 
 ### Этапы работы:
 
-1. Проанализировали датасет, перевели категориальные признаки в цифровые значения ([pd.get_dummies](https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html) or [preprocessing.LabelEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html)
+1. Проанализировали датасет, перевели категориальные признаки в цифровые значения [pd.get_dummies](https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html) or [preprocessing.LabelEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html)
 2. Реализовали визуализацию, которая основана на исследуемых данных
 3. Разделили выборку на обучающее и тестовое подмножество.     
 Построили модели:  
@@ -60,7 +60,7 @@ c) [LinearSVC()](https://scikit-learn.org/stable/modules/generated/sklearn.svm.L
 
 <hr>
 <b>Вывод:</b> Для нас ложно отрицательные результаты (пропуск целевого класса) более критичны, то нам следует стремиться к повышению полноты (recall). В данном случае, важно минимизировать количество случаев, когда модель не обнаруживает сердечную недостаточность у пациентов, которые действительно нуждаются в медицинском вмешательстве.  
-Таким образом, наилучший результат показывает Random forest. У него наивысшие показатели Recall and F1 score.   
+Таким образом, наилучший результат показывает Random forest. У него наивысшие показатели Recall and F1 score (Bagging лучше немного, но полнота в данном случае важнее).   
 Random forest включает в себя bagging и случайные подпространства (т.е. использование случайных признаков)
 <hr>
 
